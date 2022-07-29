@@ -6,36 +6,31 @@
 </div>
 <div class="row my-3" >
     
-    <h2> Cuentas con 2 invitaciones </h2>
+    <h2> Cuentas con {{invitado.numero_invitaciones}} invitaciones </h2>
     
     </div>
 <!-- Default switch -->
 <div class="row my-3" >
 <div class="div-p"> 
-    <table >
+    <table  >
         <thead>
             <th> </th>
         </thead>
-        <tbody>
-                <tr>
+        <tbody >
+                <tr *ngFor="let invitacion of invitado.invitaciones" >
                     <td >
-                        <div class="form-check form-switch" style="form-check-input-checked-bg-color: #832796">
+                        <div class="form-check form-switch" >
                             <input
                               mdbCheckbox
                               class="form-check-input"
                               type="checkbox"
                               id="flexSwitchCheckDefault"
-                              
+                              [(ngModel)]="invitacion.confirmado"
                             />
                             <label class="form-check-label" for="flexSwitchCheckDefault"
-                              > Confirmar Invitacion </label
+                              > Invitado No. {{invitacion.numero_invitacion}} </label
                             >
                           </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                       
                     </td>
                 </tr>
         </tbody>
