@@ -30,4 +30,10 @@ export class ServerService {
     console.log(url);
     return this.request("GET", `${url}`);
   }
+
+  postInvitado(invitado) {
+    const url = `${environment.serverUrl}/invitado`;
+    console.log(url);
+    return this.request("POST", url, invitado);
+  }
 }

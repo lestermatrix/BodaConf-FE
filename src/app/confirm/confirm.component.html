@@ -1,4 +1,4 @@
-
+<form>
 <div class="row my-3" >
     
 <h1> Bienvenid@ {{invitado.invitado_nombre}}</h1>
@@ -27,6 +27,7 @@
                             type="checkbox"
                             id="check-{{invitacion.numero_invitacion}}"
                             [(ngModel)]="invitacion.confirmado"
+                            [ngModelOptions]="{standalone: true}"
                           />
                           <div class="checkbox">
                             <svg width="20px" height="20px" viewBox="0 0 20 20">
@@ -44,8 +45,9 @@
 </div>
 </div>
 <div class="row">
-    <button type="button"  style="width: 50%; align-self: center; margin: 0 auto; "class="btn btn-outline-secondary">Actualizar confirmaciones</button>
+    <button type="button"  (click)="saveInvitado()" style="width: 50%; align-self: center; margin: 0 auto; "class="btn btn-outline-secondary">Actualizar confirmaciones</button>
 </div>
+</form>
 <div class="row my-3">
     <h2> Nuestra Sesion Save The Date! </h2>
 </div>
