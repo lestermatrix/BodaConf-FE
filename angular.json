@@ -25,7 +25,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/icon.png"
             ],
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",
@@ -89,7 +90,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/icon.png"
             ],
             "styles": [
               "src/styles.scss"
@@ -124,5 +126,8 @@
         }
       }
     }},
-  "defaultProject": "BodaConf-FE"
+  "defaultProject": "BodaConf-FE",
+  "cli": {
+    "analytics": "71b3956d-3190-45e3-8868-5ff0a4a180a1"
+  }
 }

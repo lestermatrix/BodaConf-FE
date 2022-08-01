@@ -6,9 +6,10 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { ConfirmComponent } from "./confirm/confirm.component";
+import { WeddingConfirmComponent } from './wedding-confirm/wedding-confirm.component';
 
 @NgModule({
-  declarations: [AppComponent, ConfirmComponent],
+  declarations: [AppComponent, ConfirmComponent, WeddingConfirmComponent],
   imports: [
     BrowserModule,
     NgbModule,

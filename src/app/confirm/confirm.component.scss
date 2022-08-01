@@ -120,3 +120,37 @@ table {
       color: #635A9A;
       border: 2px solid #635A9A;
     }
+
+    .titlepage {
+      text-align: center;
+      padding-bottom: 60px;
+ }
+ 
+ .titlepage h2 {
+      font-size: 60px;
+      color: #3e3e3e;
+      line-height: 77px;
+      font-weight: bold;
+      padding: 0;
+ }
+
+ .weare {
+  background: #fff;
+  padding-top: 90px;
+}
+
+.weare .titlepage h2 {
+  margin-bottom: 20px;
+}
+
+.weare .titlepage h2::after {
+  border-bottom: #f55171 solid 1px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 259px;
+  margin: 0 auto;
+}
