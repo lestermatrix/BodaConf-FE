@@ -98,4 +98,25 @@ table {
     width: 0;
     height: 0;
     opacity: 0; }
-  
+
+    .button {
+      background-color: #635A9A; 
+      border: none;
+      color: white;
+      padding: 12px 28px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+
+    .button {
+      transition-duration: 0.4s;
+    }
+    
+    .button:hover {
+      background-color: white;
+      color: #635A9A;
+      border: 2px solid #635A9A;
+    }
